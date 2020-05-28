@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      #Circle1{
+        position: absolute;
+    bottom: 500px;
+    width: 500px;
+    height: 500px;
+      background-color: #050210 ;
+      margin: 0 auto;
+    left: 0;
+    right: 0;
+     top: 250px;
+     border-radius: 100%;
+     transform: rotate(-180deg);
+     
+     animation-name: myanimation1;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+    
+     filter: saturate(50%);
+     
+      }
+
+      @keyframes myanimation1{ 0%{background: radial-gradient(#fb5dad,#55fb9f,#b97aff);}
+                               10%{background: radial-gradient(#55fb9f,#b97aff,#fb5dad);}
+                               20%{background: radial-gradient( #b97aff,#fb5dad,#55fb9f);}
+                               30%{background: radial-gradient( #fb5dad,#55fb9f, #b97aff);}
+                               40%{background: radial-gradient(#55fb9f, #b97aff, #fb5dad);}
+                               50%{background: radial-gradient( #b97aff,#fb5dad,#55fb9f);}
+                               60%{background: radial-gradient(#fb5dad,#55fb9f, #b97aff);}
+                               70%{background: radial-gradient(#55fb9f, #b97aff,#fb5dad);}
+                               80%{background: radial-gradient( #b97aff,#fb5dad,#55fb9f);}
+                               90%{background: radial-gradient(#fb5dad,#55fb9f, #b97aff);}
+                               100%{background: radial-gradient(#55fb9f, #b97aff,#fb5dad);}
+      }
+
+       body{background-color:  #050210;}
+
+      #Circle2{        position: absolute;
+    bottom: 400px;
+    width: 400px;
+    height: 400px;
+      background-color:  #050210;
+      margin: 0 auto;
+    left: 0;
+    right: 0;
+     top: 298px;
+     border-radius: 100%;
+     
+     
+     }
+
+     #Circle3{ position: absolute;
+         bottom: 100px;
+         width: 30px;
+         height: 30px;
+          background-color: darkslateblue;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          top: 483px;
+          border-radius: 100%;
+          box-shadow: 0 0 0 0 #050210;
+          transform: scale(1);
+          animation: pulse 2s infinite;
+          animation-timing-function: linear;
+          filter: opacity(10%);
+     }
+       
+     
+       @keyframes pulse{
+
+             0%{
+                 transform: scale(0.95);
+                 box-shadow: 0 0 0 0 darkslateblue;
+             }
+             
+             100%{transform: scale(1);
+                 box-shadow: 0 0 0 179px  darkslateblue;}
+
+             
+                 
+
+
+
+       }
+                        
+
+
+
+
+
+      
+      
+
+
+    </style>
+</head>
+<body>
+    <div id="Circle1">
+        
+    </div>
+    <div id="Circle2"></div>
+    <div id="Circle3"></div>
+</body>
+</html>
